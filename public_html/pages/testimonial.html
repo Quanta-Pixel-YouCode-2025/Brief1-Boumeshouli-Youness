@@ -14,8 +14,7 @@
 	<link rel="stylesheet" href="../assets/css/creative-studio.css">
 </head>
 <body>
-     <!-- Page Navigation -->
-     <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="../assets/imgs/logo.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
@@ -30,25 +29,35 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <div class="dropdown d-inline-block">
+                            <button class="btn btn-outline-secondary nav-link dropdown-toggle  "  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                                about
+                                </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="pages/about.html#seasons">Seasons</a>
+                            <a class="dropdown-item" href="pages/about.html#about">About</a>
+                            <a class="dropdown-item" href="pages/about.html#faq">FAQ</a>
+                            <a class="dropdown-item" href="pages/about.html#stats">STATS</a>
+                            </div>
+                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html">Week legends</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
+                        <a class="nav-link" href="team.html">Merch</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="testimonial.html">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link " href="blog.html ">blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary btn-sm ml-lg-3" href="inscription.html">inscription</a>
@@ -69,7 +78,9 @@
                             <img src="../assets/imgs/avatar-5.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">                     
                         </div>
                         <div class="body">
-                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <p class="subtitle" id="sub1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            
+<button onclick="changeId()">Read More.</button>
                             <h6 class="title">Richard Reb</h6>
                         </div>
                     </div>
@@ -173,5 +184,6 @@
 
     <!-- Creative Studio js -->
     <script src="../assets/js/creative-studio.js"></script>
+    <script src="../assets/js/testimonial.js"></script>
 </body>
 </html>

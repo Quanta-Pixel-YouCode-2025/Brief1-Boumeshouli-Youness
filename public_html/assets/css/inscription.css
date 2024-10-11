@@ -1,38 +1,89 @@
-.formulaire{
-    
-    display: flex;
-    height: 400px;
-    width: 300px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-   
+body {
+    background: url(../imgs/pile.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make body full height */
 }
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
 .first, .second {
     width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 10px;
 }
-.container{
-    padding-top: 30px;
+
+.background-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.formulaire {
     display: flex;
-
-    
-}
-.submit{
-    width: 60px; 
-}
-input{
-    
-    margin-bottom: 30px
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Full height of the parent */
+    justify-content: center; /* Center form vertically */
 }
 
-body{
-    
- 
-    background: url(../imgs/pile.jpg) no-repeat center center fixed;
-    background-size: cover;
-    
-  }
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #fff;
+}
+
+.submit {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #218838;
+}
+
+.back-button {
+    background-color: gray;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back-button:hover {
+    background-color: darkgray;
+}
